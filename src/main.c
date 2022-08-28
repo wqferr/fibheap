@@ -1,5 +1,4 @@
 #define _POSIX_C_SOURCE 202208L
-#define _ISOC99_SOURCE
 
 #include "hashmap.h"
 #include "pqueue.h"
