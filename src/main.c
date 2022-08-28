@@ -151,7 +151,7 @@ int main_dijkstra_adjmat(void) {
     };
     const int start = 0;
     const int end = 4;
-    gvalue key, val;
+    gvalue key;
     gvalue cur;
     HashMap *prev = hm_new(hashint, compint);
     PQueue *open = pq_new(hashint, compint);
@@ -289,7 +289,6 @@ int main_dijkstra(void) {
     HashMap *prev = hm_new(hashstr, compstr);
     PQueue *open = pq_new(hashstr, compstr);
     HashMap *closed = hm_new(hashstr, compstr);
-    gvalue key, val;
     gvalue current;
     gvalue start, end;
     gvalue *neighbors = NULL;
